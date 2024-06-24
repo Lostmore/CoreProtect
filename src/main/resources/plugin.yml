@@ -1,0 +1,87 @@
+name: CoreProtect
+main: net.coreprotect.CoreProtect
+version: 2.14.4
+author: Lostmore
+description: >
+             Защитник твоего сервера.
+commands:
+  core:
+    description: Готов к использованию.
+    usage: |
+  coreprotect:
+    description: Готов к использованию.
+    usage: |
+  co:
+    description: Готов к использованию.
+    usage: |
+permissions:
+    coreprotect.*:
+        description: Имеет доступ ко всем командам.
+        default: false
+        children:
+            coreprotect.rollback: true
+            coreprotect.restore: true
+            coreprotect.inspect: true
+            coreprotect.help: true
+            coreprotect.purge: true
+            coreprotect.lookup: true
+            coreprotect.lookup.chat: true
+            coreprotect.lookup.command: true
+            coreprotect.lookup.session: true
+            coreprotect.lookup.username: true
+            coreprotect.lookup.block: true
+            coreprotect.lookup.click: true
+            coreprotect.lookup.container: true
+            coreprotect.lookup.kill: true
+            coreprotect.reload: true
+    coreprotect.lookup:
+        description: Имеет разрешение на использование действия lookup
+        default: false
+        children:
+            coreprotect.lookup.chat: true
+            coreprotect.lookup.command: true
+            coreprotect.lookup.session: true
+            coreprotect.lookup.username: true
+            coreprotect.lookup.block: true
+            coreprotect.lookup.click: true
+            coreprotect.lookup.container: true
+            coreprotect.lookup.kill: true
+    coreprotect.lookup.chat:
+        description: Имеет разрешение на поиск сообщений чата
+        default: false
+    coreprotect.lookup.command:
+        description: Имеет разрешение на поиск команд игрока
+        default: false
+    coreprotect.lookup.session:
+        description: Имеет разрешение на поиск сессий игроков
+        default: false
+    coreprotect.lookup.username:
+        description: Имеет разрешение на поиск изменений имени пользователя игрока
+        default: false
+    coreprotect.lookup.block:
+        description: Имеет разрешение на поиск данных блока
+        default: false
+    coreprotect.lookup.click:
+        description: Имеет разрешение на поиск взаимодействий игроков
+        default: false
+    coreprotect.lookup.container:
+        description: Имеет разрешение на поиск транзакций контейнера
+        default: false
+    coreprotect.rollback:
+        description: Имеет разрешение на выполнение откатов(rollback)
+        default: false
+    coreprotect.restore:
+        description: Имеет разрешение на восстановление(restore)
+        default: false
+    coreprotect.inspect:
+        description: Имеет разрешение на использование слежки
+        default: false
+    coreprotect.help:
+        description: Имеет разрешение на использование "помощь"
+        default: false
+    coreprotect.purge:
+        description: Имеет разрешение на использование команды очистки
+        default: false
+    coreprotect.reload:
+        description: Имеет разрешение на команду перезагрузки
+        default: false

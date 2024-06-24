@@ -1,0 +1,8 @@
+/target
+.idea
+CoreProtect.java/src/main/java/net/coreprotect/telegrambot
+src/main/java/net/coreprotect/listener/XrayListener.java
+telegrambot/
+token.env
+.env
+.yml
